@@ -24,7 +24,7 @@
         <div class="cuerpo">
             <P>Con ese formulario vamos a recoger los datos</P>
             <br />
-            <form action="" method="POST" enctype="multipart/form-data" class="formulario">
+            <form action="datos.php" method="POST" enctype="multipart/form-data" class="formulario">
                 <label for="direccion">Destinatario
                     <input type="email" name="destino" class="form-control" />
 
