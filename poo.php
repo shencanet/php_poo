@@ -15,9 +15,9 @@ class Coche {
         echo "estoy frenando<br>";
     }
 
-    function cambio_color($color_coche){
+    function cambio_color($color_coche, $nombre_coche){
         $this->color=$color_coche;
-        echo "El color del coche es ". $this->color;;
+        echo "El color del . $nombre_coche es ". $this->color; ;
     }
 
     function __construct(){//metodo constructor estado inicial objeto
@@ -35,10 +35,27 @@ class Coche {
 
 }
 
+class Camion extends Coche{ //hereda de coche
+    function __construct(){
+        $this->ruedas=8;
+        $this->color="Gris";
+        $this->motor=5000;
+
+        function arrancar(){
+            parent::arrancar();
+            echo "camion arrancado";
+        }
+
+
+    }}
+
   $renault = new Coche();//instancia clase coche
   $seat = new Coche();
   //$seat->frenar();
   //echo $renault->color;
-  $seat->cambio_color("azul");
+  $seat->cambio_color("azul" , "LEON");
+
+  $Scania = new Camion();
+  $Scania->cambio_color("color camion", "TRuck");
 
 ?>
