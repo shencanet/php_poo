@@ -3,8 +3,9 @@
 
 //primera letra clase may
 class Coche {
-    var $ruedas;//caracteristicas propiedades 
-    var $color;
+    private $ruedas;//solo accesible desde la propia clase encapsulacion    
+
+    var $color;//caracteristicas propiedades 
     var $motor;
     function arrancar(){
         echo "Motor arrancado";
