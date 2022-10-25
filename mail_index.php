@@ -4,8 +4,12 @@
         <meta charset="utf-5" />
         <title>Funcion mail</title>
         <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css"/>
+        
+        
         <link type="text/css" rel="stylesheet" href="./css/bootstrap-theme.css"/>
-
+        
+        <link rel="stylesheet" href="./css/syles.css">
+        
 
 
     </head>
@@ -14,7 +18,7 @@
     <h1>Envio mails</h1>
     <div class="container">
 
-        <div class="cabezera">
+        <div class="cabecera">
             <img src="./assets/mailing1.jpg" />
         </div>
         <div class="cuerpo">
@@ -56,9 +60,10 @@
 
 <footer>
 
-<hr/>
-&COPY; SHENCANET <?php echo date ('D M Y');?>
+    <hr/>
+    &COPY; SHENCANET <?php echo date ('D M Y');?>
 </footer>
+
 </body>
 
 </html>

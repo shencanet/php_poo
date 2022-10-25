@@ -1,0 +1,56 @@
+body{
+ background: ghostwhite;
+    
+}
+
+.cabecera{
+    position: absolute;
+    top: 10px;
+    width: 1150px;
+    height: 130px;
+}
+
+.cuerpo {
+
+    position: absolute;
+    top: 160px;
+    left: 460px;
+    border: 2px solid blue;
+    padding: 50px ;
+    border-radius: 15px;
+
+}
+
+p{
+    font-size: 16px;
+    color: #000000;
+    font-family: inherit;
+}
+    
+.formulario{
+    text-align: center;
+
+
+}
+
+footer{
+position: absolute;
+bottom: 10px;
+left:35px ;
+
+
+}
+
+#link{
+    text-align: center;
+
+}
+
+a{
+    font-size: 20px;
+    font-family: inherit;
+    padding: 10px;
+    background-color: blue;
+    color: #ffffff;
+    text-decoration: none;
+}
