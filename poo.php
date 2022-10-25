@@ -15,6 +15,11 @@ class Coche {
         echo "estoy frenando<br>";
     }
 
+    function cambio_color($color_coche){
+        $this->color=$color_coche;
+        echo "El color del coche es ". $this->color;;
+    }
+
     function __construct(){//metodo constructor estado inicial objeto
         //referencia propia clase
         $this->ruedas=4;
@@ -32,7 +37,8 @@ class Coche {
 
   $renault = new Coche();//instancia clase coche
   $seat = new Coche();
-  $seat->frenar();
-  echo $renault->color;
+  //$seat->frenar();
+  //echo $renault->color;
+  $seat->cambio_color("azul");
 
 ?>
