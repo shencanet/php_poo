@@ -3,8 +3,8 @@
 
 //primera letra clase may
 class Coche {
-    private $ruedas;//solo accesible desde la propia clase encapsulacion    
-
+    //private $ruedas;//solo accesible desde la propia clase encapsulacion    
+    protected $ruedas;// de esta forma camion podra verla
     var $color;//caracteristicas propiedades 
     var $motor;
     function arrancar(){
@@ -29,6 +29,10 @@ class Coche {
 
 
 
+    }
+
+    function get_ruedas(){
+        return $this->ruedas;
     }
 
 
@@ -58,5 +62,4 @@ class Camion extends Coche{ //hereda de coche
 
   $Scania = new Camion();
   $Scania->cambio_color("color camion", "TRuck");
-
-?>
+  echo "tiene" . $mazda->get_ruedas() ;//setter
